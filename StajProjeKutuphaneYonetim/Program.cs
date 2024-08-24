@@ -14,8 +14,9 @@ namespace LibraryManagementSystem
             repo.AddUser(user);
 
             // Kitap ekleme
-            repo.AddBook(new Book { title = "Kitap 1", author = "Yazar 1", category = "Kategori 1", IsAvailable = true });
-            repo.AddBook(new Book { title = "Kitap 2", author = "Yazar 2", category = "Kategori 2", IsAvailable = true });
+            repo.AddBook(new Book { title = "Suç ve Ceza", author = "Dostoyevski", category = "Roman", IsAvailable = true });
+            repo.AddBook(new Book { title = "Sefiller", author = "Victor Hugo", category = "Roman", IsAvailable = true });
+            repo.AddBook(new Book { title = "Böyle Buyurdu Zerdüşt", author = "Friedrich Nietzsche", category = "Roman", IsAvailable = true });
 
             // Kullanıcının kitap ödünç alması
             var availableBooks = repo.GetAvailableBooks();
